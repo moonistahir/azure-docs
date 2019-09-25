@@ -20,6 +20,10 @@ To set up this access, you can
 [create an *integration service environment* (ISE)](../logic-apps/connect-virtual-network-vnet-isolated-environment.md) 
 where you can run your logic apps and create your integration accounts.
 
+Important Note
+“Subnet name should never start with a number. The subnet names has the following restrictions. A subnet name should starts with alphabet and doesn't have any of the characters mentioned below.
+Subnet name should start with an alphabet or an underscore, and doesn't have these characters: <, >, %, &, \\, ?, /"
+
 When you create an ISE, Azure *injects* that ISE into your Azure virtual network, which then deploys a private and isolated instance of the Logic Apps service into your Azure virtual network. This private instance uses dedicated resources such as storage, 
 and runs separately from the public "global" Logic Apps service. 
 Separating your isolated private instance and the public global 
